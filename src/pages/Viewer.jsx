@@ -32,13 +32,13 @@ const Viewer = () => {
       <div className="">
         <h1 className="font-bold text-3xl  ">Tecazine Responses</h1>
         {!loading && (
-          <ul className="mt-9">
+          <ul className="mt-9 ">
             {documents.map((document) => (
               <li
                 key={document}
                 className=" p-3 m-2 rounded-md flex items-center cursor-pointer "
               >
-                <div className="px-9 flex sm:flex-row flex-col sm:items-center  w-full sm:w-1/2 sm:justify-between gap-3 border-2 p-2 rounded-md hover:bg-purple-200">
+                <div className="px-9 flex sm:flex-row flex-col sm:items-center sm:w-1/2 sm:justify-between gap-3 border-2 p-2 rounded-md hover:bg-purple-200 flex-grow lg:flex-none">
                   {document}
                   <button
                     onClick={() => downloadDocument(document)}
